@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="induk container-fluid bg-dark text-white" style="height: 70%;">
+        <div class="row">
+            <div class="col" style="height: 30%;">
+                <h2 class="text-center">News Sentiment Analysis</h2>
+            </div>
+        </div>
+    </div>
+   <div class="jumbotron jumbotron-fluid w-100">
+            <div class="row">
+                <div class="col">
+                    <form align="center" method="POST" action="/">
+                        <div class="form-group">
+                          <label>Inputkan Link Beritanya</label><br>
+                          <input type="text"  name="username">
+                        </div>
+                        <button type="submit" class="btn btn-secondary" value="submit">Submit</button>
+                      </form>
+                </div>
+            </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+            <div class="row">
+                <div class="col-md text-center">
+                    <h3>News Url =  {{ url }}</h3>
+                    <h3>Polarity = {{ polarty}}</h3>
+                    <h3>Sentiment_polarty = {{ sentiment_polarty}}
+                    <h3>Sentiment_subjct = {{ sentiment_subjct }}</h3>
+                    <h3>Subjct = {{ subjct }}</h3>
+                </div>
+            </div>
+    </div>
+    <div class="p-3 mb-2 bg-primary text-white">
+        <footer class="text-center">By Nur Hanifah Amatullah 1184086</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

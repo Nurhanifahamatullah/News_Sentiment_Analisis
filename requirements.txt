@@ -1,0 +1,5 @@
+Flask
+insta-scrape
+textblob
+gunicorn
+nltk
