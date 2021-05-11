@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def index():
     if request.method == 'POST':
-        url="https://economictimes.indiatimes.com/news/india/high-court-come-down-on-publicity-interest-litigations-imposes-cost"
+        url = request.form['url']
         remove = url.replace(('-'),' ')
         change = r"https?://(www\.)?"
         text = re.sub(change, ' ', remove)
